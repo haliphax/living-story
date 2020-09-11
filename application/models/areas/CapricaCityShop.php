@@ -11,7 +11,7 @@ class CapricaCityShop extends Area
 			? ' The shop owner looks up from his ledgers long enough to say, "I heard you helped Sally\'s little seashell business. Quite the samaritan, aren\'t you?"'
 			: '');
 		$this->name	= 'The Shop';
-		$this->description = "<p>You are in Caprica City's oldest and most mysterious shop. Yackity yackity blah.{$bucket}{$sally}</p>";
+		$this->description = "<p>You are in Caprica City's oldest and most mysterious shop. Yackity yackity blah. $bucket $sally</p>";
 		$this->randoms = array(
 			array('Nothing', 20),
 			array('Mugging', 15),
@@ -19,8 +19,10 @@ class CapricaCityShop extends Area
 		$this->choices = array(
 			array('Return to the City Gates', 'Caprica_gates'),
 			);
+
 		if($bucket)
 			$this->choices[] = array('Take the free bucket', 'Caprica_bucket');
+
 		parent::__construct();
 	}
 }

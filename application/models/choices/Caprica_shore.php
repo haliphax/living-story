@@ -2,13 +2,8 @@
 
 class Caprica_shore extends Choice
 {
-	function __construct()
-	{
-		parent::__construct();
-	}
-
 	function choose()
 	{
-		$this->player->area("CapricaCityShore");
+		$this->player->area('CapricaCityShore');
 	}
 }

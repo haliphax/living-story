@@ -30,7 +30,7 @@
 		<?php endif; ?>
 		<ul>
 			<?php foreach($choices as $c): ?>
-				<li><!--<?=$this->session->userdata('salt');?>--><a href="<?=site_url("game/choose/{$c[1]}/" . $this->player->hash($c[1]));?>"><?=$c[0]?></a></li>
+				<li><a href="<?=site_url("game/choose/{$c[1]}/" . $this->player->hash($c[1]));?>"><?=$c[0]?></a></li>
 			<?php endforeach; ?>
 		</ul>
 		<p>

@@ -4,7 +4,6 @@ class Mermaid extends Event
 {
 	function __construct()
 	{
-		parent::__construct();
 		if($this->player->roll('cunning', 12))
 			$this->player->message('<p>You managed to sneak up on a mermaid as she was lying on the sand, basking in the sun; as she wriggles away from you, one of her scales falls to the ground. You pick it up.</p>');
 		else

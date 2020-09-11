@@ -6,6 +6,5 @@ class Bucket extends Item
 	{
 		$this->name = 'Bucket';
 		$this->description = 'This bucket has seen better days. Nonetheless, it would make a fine recepticle for collecting seashells down by the seashore.';
-		parent::__construct();
 	}
 }

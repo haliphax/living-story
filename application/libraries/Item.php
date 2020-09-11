@@ -2,12 +2,10 @@
 
 class Item extends MY_Model
 {
-	public	$name;				# name of the item
-	public	$description;		# description of the item
-	public	$image;				# image for representing the item
-		
-	function __construct()
-	{
-		parent::__construct();
-	}
+	# name of the item
+	public	$name;
+	# description of the item
+	public	$description;
+	# image for representing the item
+	public	$image;
 }

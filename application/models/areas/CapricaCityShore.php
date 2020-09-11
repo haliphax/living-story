@@ -8,7 +8,7 @@ class CapricaCityShore extends Area
 			? ' Sally is eyeing your rusty bucket with envy.'
 			: '');
 		$this->name = 'Seashore';
-		$this->description = "<p>You are at the seashore. Sally is here, selling seashells. Alliteration is fun, isn't it?{$bucket}</p>";
+		$this->description = "<p>You are at the seashore. Sally is here, selling seashells. Alliteration is fun, isn't it? $bucket</p>";
 		$this->randoms = array(
 			array('Nothing', 20),
 			array('Mermaid', 15),
@@ -17,8 +17,10 @@ class CapricaCityShore extends Area
 			array('Return to the City Gates', 'Caprica_gates'),
 			array('Talk to Sally', 'Caprica_Sally'),
 		);
+
 		if($bucket)
 			$this->choices[] = array('Give Sally the rusty bucket', 'Caprica_givebucket');
+
 		parent::__construct();
 	}
 }
